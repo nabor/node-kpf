@@ -1,6 +1,6 @@
 {
   "name": "kpf",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Kit de Pago Flow",
   "main": "lib/kpf.js",
   "scripts": {
