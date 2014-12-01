@@ -1,6 +1,6 @@
 {
   "name": "kpf",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Kit de Pago Flow",
   "main": "lib/kpf.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com//nabor/kpf.git"
+    "url": "https://github.com/nabor/kpf.git"
   },
   "keywords": [
     "flow",
