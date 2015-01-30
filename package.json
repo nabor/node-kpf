@@ -1,6 +1,6 @@
 {
   "name": "kpf",
-  "version": "0.0.21",
+  "version": "0.0.100",
   "description": "Kit de Pago Flow",
   "main": "lib/kpf.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "author": "Nabor Erices",
   "license": "MIT",
   "dependencies": {
-    "he": "^0.5.0",
+    "he": "0.5.0",
     "urlcode-json": "0.0.5"
   }
 }
