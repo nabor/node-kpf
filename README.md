@@ -39,7 +39,7 @@ var flow_pack = flow_api.newOrder(numero_orden, total, descripcion);
 Luego se debe enviar por metodo POST a la url definida en `flow_url_pago` el valor obtenido en `flow_pack` 
 
 Por ejemplo a travez de un formulario 
-```
+```html
 <form id="flow-form" method="post" action="http://flow.tuxpan.com/app/kpf/pago.php">
     <input type="hidden" name="parameters" value="[flow_pack]">
     <button type="submit">
@@ -52,7 +52,7 @@ Esto reenvia al usuario a la pagina de flow donde se realiza el pago
 Flow llama a la url definida en `flow_url_confirmacion` para confirmar el pago
 
 Para revisar la informacion enviada por post y ver si el pago es valido 
-```
+```javascript
 var flow_confirm;
 var resultado;
 try {
@@ -65,7 +65,7 @@ try {
 La funcion `buildResponse` genera una respuesta para el llamado a `flow_url_confirmacion`
 
 Para poder obtener la informacion enviada y poder verificar el pago existen las siguientes funciones
-```
+```javascript
 flow_api.getOrderNumber() {
 flow_api.getConcept() {
 flow_api.getAmount() {
@@ -88,7 +88,7 @@ Dependiendo si el pago es valido o no flow luego llama a `flow_url_exito` o `flo
 Para obtener los datos enviados por flow en dichos llamados se debe obtener el parametro `response` desde los datos enviados por POST
 
 Por ejemplo en express.js
-```
+```javascript
 var response = req.body.response;
 var flow_confirm = flow_api.readResult(response);
 ```
